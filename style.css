@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(28, 32, 34);
+    font-family: Heebo, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-rating-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    width: 20%;
+    padding: 1.5rem;
+    background-color: #212933;
+
+}
+
+.star {
+    background-color: #262F38;
+    padding: 1.1rem;
+    border-radius: 50%;
+
+}
+
+h3 {
+    color: white;
+
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    background-color: #262F38;
+    width: 6%;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+span:hover {
+    background-color: #FB7612;
+}
+
+span:active {
+    background-color: #7C8797;
+}
+
+.submit-button {
+    color: white;
+    background-color: #FB7612;
+    padding: 0.6rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #FB7612;
+
+}
+
+
+.result-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    width: 20%;
+    padding: 1.5rem;
+    background-color: #212933;
+
+}
+
+.result-text {
+    color: rgba(251, 118, 18, 0.8);
+    background-color: #262F38;
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 80%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.result-box {
+    text-align: center;
+}
+
+.remove {
+    display: none;
+}
+
+/* media queries for responsive design */
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        display: flex;
+        width: 100%;
+    }
+
+    .main-rating-box {
+        display: flex;
+        width: 30%;
+        padding: 1.4rem;
+    }
+
+    .result-box {
+        display: flex;
+        width: 30%;
+        padding: 1.4rem;
+    }
+
+    .remove {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        width: 100%;
+    }
+
+    .main-rating-box {
+        display: flex;
+        width: 60%;
+        padding: 1.4rem;
+    }
+
+    .result-box {
+        display: flex;
+        width: 60%;
+        padding: 1.4rem;
+    }
+
+    .remove {
+        display: none;
+    }
+
+
+
+
+}
